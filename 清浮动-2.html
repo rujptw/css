@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  #main{
+    border:1px solid red;
+  }
+  #left{
+    width:80px;
+    height:80px;
+    background: green;
+    float:left;
+  }
+  #right{
+    width:80px;
+    height:80px;
+    background: blue;
+    float:right;
+  }
+  .clear{
+    clear:both
+  }
+  </style>
+</head>
+<body>
+<!--父元素添加overflow:hidden-->
+<div id="main">
+<div id="left"></div>
+<div id="right"></div>
+<div class="clear"></div>
+</div>
+</body>
+</html>
