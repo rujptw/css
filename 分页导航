@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;
+		padding: 0;
+		list-style:none;
+		text-decoration: none;
+	}
+	ul{
+		overflow: hidden;
+		margin: 0 auto;
+		width:800px;
+	}
+	ul li{
+		float:left;
+		margin-right:50px;
+	}
+	ul li a{
+			color:#000;
+			display:block;
+			padding:0.2em 0.5em;
+			border:1px solid #ccc;
+			text-decoration: none;
+	}
+	ul li a:hover,ul li a:focus{
+		background:aqua;
+		color:#fff;
+	}
+	ul li a[rel="pre"],ul li a[rel="next"]{
+		border:none;
+	}
+	ul li a[rel="pre"]:before{
+			content:"\00AB";
+			padding-right: 0.5em;
+		}
+	ul li a[rel="next"]:after{
+			content:"\00BB";
+			padding-left: 0.5em;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#" rel="pre">Pre</a></li>
+		<li class="selected"><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">5</a></li>
+		<li><a href="#" rel="next">Next</a></li>
+	</ul>
+</body>
+</html>
