@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-decoration: none;
+		}
+		ul.nav{
+			float:left;/*父元素设置float，可解决高度塌陷的问题*/
+			border: 1px solid #000;
+			background-color:greenyellow;
+			margin:0 auto;
+		}
+		ul.nav li{
+			float:left;
+			width: 8em;
+			background: gold;
+		}
+		ul.nav li ul{
+			width:8em;
+			position:absolute;
+			left:-999em;
+		}
+		ul.nav li:hover ul{
+			left: auto;/*设置为auto可将绝对定位的元素拉回原来的地方*/
+		}
+		ul.nav a{
+			display:block;
+			color: deeppink;
+			padding:20px 30px;
+			background: url("./灯泡.png") no-repeat 0% 50%;
+			border-right:1px solid seagreen;}
+ ul.nav li:last-child a{
+			border-right:0;
+		}
+		ul.nav li ul li a{
+			border: 1px solid darkorange;		}
+		ul.nav li ul li:last-child a{
+			border-top:0;
+ border-right:1px solid darkorange
+		}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+		<li><a href="home">home</a></li>
+		<li><a href="prodcut">prodcut</a>
+			<ul>
+				<li><a href="#">product1</a></li>
+				<li><a href="#">product2</a></li>
+			</ul>			
+		</li>
+		<li><a href="services">services</a>
+			<ul>
+<li>
+	<a href="#">services1</a>
+</li>
+<li>
+	<a href="#">services2</a>
+</li>
+			</ul>
+		</li>
+		<li><a href="contact us">contact us</a></li>
+	</ul>
+</body>
+</html>
