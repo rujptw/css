@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+	*{
+		margin:0;
+		padding: 0;
+		text-decoration: none;
+		list-style-type: none;
+	}
+	div.container{
+		width:330px;
+		height: 500px;
+		position: relative;
+	}
+	div.container a{
+		position: absolute;
+		display: block;
+		width:50px;
+		height: 60px;
+		text-indent: -1000em;
+	}
+	div.container .rich a{
+		top:50px;
+		left:50px;
+	}
+	div.container .tom a{
+		top:50px;
+		left:120px;
+	}
+ div.container .jack a{ top:50px; left:260px; }
+ div.container .jackson a{ top:388px; left:104px; }
+ div.container .jerry a{ top:388px; left:220px; }
+	div.container a:hover,a:focus{
+		border: 2px double gray;
+	}
+	</style>
+</head>
+<body>
+	
+	<div class="container"><img src="./westlife.jpg" alt="westlife band" width="330px" height="500px">
+		<ul>
+			<li class="rich">
+				<a href="#" title="rich">rich</a>
+			</li>
+			<li class="tom">
+				<a href="#" title="tom">tom</a>
+			</li>
+			<li class="jack">
+				<a href="#" title="jack">jack</a>
+			</li>
+			<li class="jackson">
+				<a href="#" title="jackson">jackson</a>
+			</li>
+			<li class="jerry">
+				<a href="#" title="jerry">jerry</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
