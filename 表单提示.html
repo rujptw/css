@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		form div{
+			position: relative;
+			width:400px;
+			margin-bottom:5px;
+		}
+		em.feedback{
+			position: absolute;;
+			right:-0.5em;
+			padding-left: 18px;
+			color:#760000;
+			font-weight: bold;
+		}
+		#tel{
+			position: relative;
+			left:-6px;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+	<fieldset>
+		
+	<div><label for="email">email<em class="feedback">please enter your email</em></label>
+	<input type="text" id="email" name="email">
+	</div>
+	<div id="tel"><label for="phone">phone<em class="feedback">please enter your phone</em></label>
+	<input type="text" id="phone" name="phone">
+	</div>
+	</fieldset>
+	</form>
+</body>
+</html>
