@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+
+	#YearofBirthLabel,#MonthofBirthLabel{
+		display:none;
+		width:0px;
+		height:0px;
+	}
+	input#DateofBirth{
+		width:10em;
+		margin-right: 0.5em;
+	}
+	select#DateofBirth{
+		width:10em;
+		margin-right: 0.5em;
+	}
+	input#YearofBirth{
+		width:5em;
+		
+	}
+	fieldset{
+		border: 1px solid #ccc;
+
+	}
+	legend{
+		font-weight: bold;
+	}
+	#favouriteColor h2{
+		width:10em;
+		float:left;
+		font-size:1em;
+		font-weight: normal;;
+	}
+	#favouriteColor .col{
+		width:8em;
+		float:left;
+	}
+	#favouriteColor label{
+		float:none;
+	}
+	button{
+		border:none;
+		background: none;
+		cursor: pointer;
+		box-shadow: 1px 1px #ccc;
+	}
+</style>
+<body>
+	<form action="">
+	<fieldset>
+		<legend>Personal Information</legend>
+	<!-- 出生日期 -->
+	<div>
+		<label for="DateofBirth">DateofBirth</label>
+		<input type="text" name="DateofBirth" id="DateofBirth"/>
+		<label for="MonthofBirth" id="MonthofBirthLabel">DateofBirth</label>
+		<select name="MonthofBirth" id="MonthofBirth">
+			<option value="1">january</option>
+			<option value="2">february</option>
+			<option value="3">march</option>
+		</select>
+		<label for="YearofBirth" id="YearofBirthLabel">YearofBirth:</label>
+		<input type="text" name="YearofBirth" id="YearofBirth">
+	</div>
+	</fieldset>
+	<fieldset id="favouriteColor">
+		<h2>favourite color</h2>
+		<div class="col">
+			<div>
+				<label for="red"><input type="checkbox" id="red" name="red">red</label>
+			</div>
+				<div><label for="purple"><input type="checkbox" id="purple" name="purple">purple</label>
+			</div>
+			<div><label for="green"><input type="checkbox" id="green" name="green">green</label>
+			</div>
+			<div><label for="red"><input type="checkbox" id="red" name="red">red</label>
+			</div>
+		</div>
+		<div class="col">
+			<div>
+				<div>
+				<label for="orange"><input type="checkbox" id="orange" name="orange">orange</label>
+				</div>
+				<div>
+				<label for="purple"><input type="checkbox" id="purple" name="purple">purple</label>
+				</div>
+				<div><label for="aqua"><input type="checkbox" id="aqua" name="aqua">aqua</label>
+			</div>
+			<div><label for="black"><input type="checkbox" id="black" name="black">black</label>
+			</div>
+			</div>
+		</div>
+	</fieldset>
+	<fieldset>
+		<!-- button元素可以放img标签 -->
+		<div><button><img src="./灯泡.png"/></button></div>
+	</fieldset>
+	</form>
+</body>
+</html>
