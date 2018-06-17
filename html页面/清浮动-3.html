@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  #main{
+    border:1px solid red;
+  }
+  #left{
+    width:80px;
+    height:80px;
+    background: green;
+    float:left;
+  }
+  #right{
+    width:80px;
+    height:80px;
+    background: blue;
+    float:right;
+  }
+  #main:after{
+  	content:".";
+  	visibility: hidden;
+  	height:0;
+  	display: block;
+  	clear:both;
+  }
+  </style>
+</head>
+<body>
+<!--添加伪类-->
+<div id="main ">
+<div id="left"></div>
+<div id="right"></div>
+</div>
+</body>
+</html>
