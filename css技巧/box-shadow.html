@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>box-shadow模拟多重边框(实线)</title>
+    <style>
+        .shadow {
+            width:50px;
+            height:50px;
+            margin: 0 auto;
+            background: green;
+            /* 参数:1. 水平阴影  2. 垂直阴影 3. 模糊度 4. 阴影尺寸 5. color 6. 内部阴影(inset[可选])*/
+            /* 多重边框模拟只需在每个属性后加一个逗号就可以了 */
+            /* 注意：box-shadow：不占据实际的尺寸 */
+            box-shadow: 0 0 0 10px #655, 0 0 0 15px aqua, 0 0 0 20px orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shadow"></div>
+</body>
+
+</html>
