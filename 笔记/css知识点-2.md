@@ -1,5 +1,5 @@
 ##### 选择标记
-1. 有意义并且轻量,id设置要确保唯一性，很多样式相似的元素可以设置class,但要避免"多类症"，可以使用元素选择器来设置类里面小元素的样式,div表示分隔区域,id,class，元素的设置要根据它的功能进行分类
+1. 有意义并且轻量,div表示分隔区域,元素的设置要根据它的功能进行分类
 
 
 ##### reset css
@@ -13,7 +13,8 @@
 7. raba透明度智慧影响它自身，opacity则会影响它所包含的子元素
 8. text-shadow:文本阴影
 9. box-shadow:盒子阴影
-10. 属性选择器: p[title="shocking"]
-11. 相邻同胞选择器
-12. [1]min-height|| width, [2]max-width || height
-13. text-overflow:ellipsis:文字省略
+10. 背景也可以设置透明度,可以使用`rgba()`。
+11. `box-shadow`:水平,垂直偏移值、阴影半径、颜色。
+
+14. [1]min-height|| width, [2]max-width || height
+15. text-overflow:ellipsis:文字省略

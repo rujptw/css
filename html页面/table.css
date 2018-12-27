@@ -1,0 +1,15 @@
+#first-table td:first-child {
+  color: red;
+}
+
+#first-table td:first-child + td {
+  color: orange;
+}
+
+#first-table p ~ i {
+  color: orangered;
+}
+
+#first-table tr > td {
+  color: blue;
+}
