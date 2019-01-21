@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* 去除type=number的input样式,变为普通的input */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    input[type="number"] {
+    -moz-appearance: textfield;
+    }
+    </style>
+</head>
+<body>
+    <div class="layui-form-item">
+        <label class="layui-form-label">可容纳人数</label>
+        <div class="layui-input-block">
+            <!-- ime-mode:输入法模式,disabled为禁止调用输入法,onkeypress=return (/[\d]/.test(String.fromCharCode(event.keyCode))),只允许输入数字 -->
+            <inputautocomplete="off" class="layui-input" id="txtPersonNumber" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))"
+                style="ime-mode:disabled">
+            <span class="filederror"></span>
+        </div>
+    </div>
+
+</body>
+</html>
