@@ -1,0 +1,250 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol li {
+  list-style: none;
+}
+
+/* 头部导航 */
+.head-container {
+  width: 100%;
+  background: #333;
+}
+
+.head-container .head-details {
+  width: 1226px;
+  height: 40px;
+  font-size: 12px;
+  color: #b0b0b0;
+  background: #333;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.head-nav .head-target:hover {
+  color: #fff;
+  cursor: pointer
+}
+
+/* LEARN:em,px,rem的各种区别 */
+.head-nav .seq {
+  color: #424242;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+.head-func .head-target:hover {
+  color: #fff;
+  cursor: pointer
+}
+
+.head-func .seq {
+  color: #424242;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+/* 上半部主体部分 */
+.main--container {
+  margin: 0 auto;
+  width: 1226px;
+  background-color: #fff;
+  margin-bottom: 42px;
+}
+
+
+/* 导航 */
+.main--container .log-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background: #fff;
+}
+
+.log-nav .logo {
+  background: url(./imgs/mi-logo.png) 50% 50%;
+  background-repeat: no-repeat;
+  width: 55px;
+  height: 55px;
+  background-color: #ff6700;
+}
+
+.log-nav .phone-categroy {
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.log-nav .phone-categroy .items {
+  margin-right: 12px;
+  margin-left: 12px;
+}
+
+.log-nav .phone-categroy .items:hover {
+  color: #ff6700;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+}
+
+.search .search-items {
+  height: 50px;
+  width: 223px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 1px solid #ddd;
+  border-right: 0;
+}
+
+.search .search-items:focus {
+  border-color: #ff6700;
+  outline: none;
+}
+
+.search .search-submit:focus {
+  border-color: #ff6700;
+  /* LEARN:去除input默认的轮廓线 */
+  outline: none;
+
+}
+
+.search .search-submit {
+  height: 50px;
+  width: 50px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+/* banner部分 */
+.banner {
+  background: #ff6700;
+  height: 460px;
+}
+
+/* 热卖部分 */
+.hot-sell {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #fff;
+  justify-content: space-between;
+  /* 以下的margin修正flex布局造成的margin值不一的情况 */
+  margin-bottom: 10px;
+  margin-top: -2px;
+}
+
+.hot-sell .chanel {
+  width: 234px;
+  height: 170px;
+
+  background-color: #5f5750;
+  display: flex;
+  /* 保持宽高 */
+  flex-wrap: wrap;
+  padding-inline-start: 0px;
+  justify-content: space-evenly;
+  color: #b0b0b0;
+}
+
+.chanel .chanel-item {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.chanel .chanel-item:hover {
+  color: #fff;
+}
+
+.hot-sell .hot-item {
+  width: 316px;
+  height: 170px;
+  background: #ff6700;
+}
+
+/* 下半部主体部分 */
+.bottom-main-container {
+  width: 100%;
+  padding-top: 22px;
+  background-color: #f5f5f5;
+}
+
+.product-list {
+  margin: 0 auto;
+  width: 1226px;
+}
+
+.product-category .product-title {
+  color: #333;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 58px;
+  margin: 0px;
+}
+.product-category .publish-img{
+  margin-bottom: 28px;
+  margin-top: 22px;
+}
+.product-title .product-title-categroy {
+  font-size: 16px;
+  color: #424242;
+}
+
+.product-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.product-detail .detail-left {
+  width: 234px;
+  margin-right: 14px;
+}
+
+.product-detail .detail-left:hover {
+  box-shadow: 10px 10px 5px #888888;
+  transform: translate3d(0, -5px, 0)
+}
+
+.product-detail .detail-right {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  padding-inline-start: 0px;
+  /* 设置高度防止flex子容器溢出 */
+  height: 614px;
+  align-content: space-between
+}
+
+.detail-right .detail-right--item {
+  width: 234px;
+  height: 300px;
+  background: orangered;
+}
+
+.detail-right .detail-right--item:hover {
+  box-shadow: 10px 10px 5px #888888;
+  transform: translate3d(0, -5px, 0)
+}
